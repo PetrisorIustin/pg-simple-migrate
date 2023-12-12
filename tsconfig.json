@@ -21,6 +21,7 @@
     "declarationMap": true,
     "strict": true,
     "esModuleInterop": true,
-    "moduleResolution":"Node"
+    "moduleResolution":"Node",
+    "types": ["pg"]
   },
 }
