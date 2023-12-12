@@ -18,7 +18,6 @@ export const migrate = async (options: MigrationOptions) => {
   const client = new Client(options.config);
   try {
     await client.connect();
-    await client.end();
   } catch (error) {
     console.error('Error connecting to database:', error);
     return;
