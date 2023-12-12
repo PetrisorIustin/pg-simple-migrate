@@ -1,3 +1,3 @@
-import { migrate } from './migrate';
+import { migrate, MigrationOptions } from './migrate';
 
-export { migrate };
+export { migrate, MigrationOptions };
