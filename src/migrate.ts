@@ -22,8 +22,8 @@ export const migrate = async (options: MigrationOptions) => {
   try {
     client = await pool.connect();
     // Create the specified schema if it doesn't exist
-    if (options.schema) {
-      await client.query(`CREATE SCHEMA IF NOT EXISTS ${options.schema}`);
+    if (schema) {
+      await client.query(`CREATE SCHEMA IF NOT EXISTS ${schema}`);
     }
 
     // Create migrations table in the specified schema if it doesn't exist
