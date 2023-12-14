@@ -1,12 +1,13 @@
 {
   "name": "pg-simple-migrate",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "typescript": "tsc",
+    "release": "tsc && node release.js",
     "start": "ts-node src/index.ts"
   },
   "repository": {
@@ -19,10 +20,11 @@
   "devDependencies": {
     "@types/node": "^20.10.4",
     "@types/pg": "^8.10.9",
+    "semver": "^7.5.4",
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "pg": "^8.11.3"
+    "pg": "^8.11.0"
   },
   "peerDependencies": {
     "pg": "^8.11.0"
